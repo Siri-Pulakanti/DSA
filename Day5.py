@@ -164,6 +164,30 @@
 #                     return i
 
 
+# https://leetcode.com/problems/number-of-good-pairs/description/
+
+# class Solution:
+#     def numIdenticalPairs(self, nums: List[int]) -> int:
+#         goodPair=0
+#         for i in range(len(nums)):
+#             for j in range(i+1,len(nums)):
+#                 if(nums[i]==nums[j]):
+#                     goodPair+=1
+
+#         return goodPair
+
+# class Solution:
+#     def numIdenticalPairs(self, nums: List[int]) -> int:
+#         goodPair=0
+#         dict={}
+#         for i in range(len(nums)):
+#             if nums[i] in dict:
+#                 dict[nums[i]]+=1
+#             else:
+#                 dict[nums[i]]=1
+#         for i in dict:
+#             goodPair+=(dict[i]*(dict[i]-1))//2
+#         return goodPair
 
 
 
