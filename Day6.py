@@ -63,7 +63,7 @@
             
                 
 # # set usage--to store unordered elements or unique elemts
-
+# set1=set()
 # set1={1,2,3,5,22,3,2}
 # print(set1)
 # set1={1,2,3,4,55,5,2,2,2,2,2,2}
@@ -74,7 +74,7 @@
 # print(set1)
 # # set1.remove(10) (throws error as 10 is not present)
 
-# set1.discard(10) #(discardes when if presents or doesnt throw an error)
+# set1.discard(10) #(discards when if presents or doesn't throw an error)
 # print(set1)
 
 # set2={1,2,4,6,9,0,22,44}
