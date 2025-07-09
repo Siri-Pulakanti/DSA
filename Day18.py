@@ -22,6 +22,27 @@ https://leetcode.com/problems/plus-one/description/
 
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
+        carry=1
+        
+        for i in range(len(digits)-1,-1,-1):
+            if carry==0:
+                return digits
+            else:
+                
+                sum=digits[i]+carry
+                digits[i]=sum%10
+                carry=sum//10
+        if carry!=0:        
+            ans=[1]
+            ans.extend(digits)
+            return ans
+        else:
+            return digits
+
+        
+
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
         k=0
         for i in range(len(digits)):
             k=k*10
